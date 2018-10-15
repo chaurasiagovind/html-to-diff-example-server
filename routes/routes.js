@@ -32,7 +32,7 @@ logger.logDiffText(diff, { charsAroundDiff: 40 });
 
 var convert = new Convert();
 
- difference = convert.toHtml(difference).replace(/\"/g, "'")
+ difference = convert.toHtml(difference);
 
 res.status(200).send({ message:  difference});
   });
